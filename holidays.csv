@@ -1,0 +1,24 @@
+Category,City,Continent,Country,HolidayReference,HotelName,Location,PricePerNight,StarRating,TempRating,_id
+active,Base Marambio,Antarctica,Antartica,20,IceHotel,mountain,270,5,cold,63a066b7a255fe4765df504c
+active,,Arctic,Greenland,21,NorthStar,mountain,250,5,cold,63a066b7a255fe4765df504d
+active,Bali,Asia,Indonesia,1,Uptown,mountain,120,3,mild,63a0672da255fe4765df504e
+lazy,New Orleans,North America,USA,2,Relaxamax,city,28,4,mild,63a0672da255fe4765df504f
+active,Ventry,Europe,Ireland,3,WindyBeach,sea,42,3,mild,63a0672da255fe4765df5050
+lazy,Marrakech,Africa,Morocco,4,Twighlight,mountain,50,5,cold,63a0672da255fe4765df5051
+lazy,Sydney,Australia,Australia,5,TooHot,sea,67,5,hot,63a0672da255fe4765df5052
+lazy,,Africa,The Maldives,6,Castaway,sea,120,3,mild,63a0672da255fe4765df5053
+active,Paris,Europe,France,7,Eiffel Park,city,45,4,mild,63a0672da255fe4765df5054
+active,Cape Town,Africa,South Africa,8,The Cape,sea,78,4,mild,63a0672da255fe4765df5055
+active,Dubai,Asia,U.A.E,9,Desert Dreams,mountain,67,4,hot,63a0672da255fe4765df5056
+active,Bora Bora,Australia,French Polynesia,10,SeaViews,sea,54,3,mild,63a0672da255fe4765df5057
+active,New York,North America,USA,11,AppleCity,city,27,3,mild,63a0672da255fe4765df5058
+active,Dubrovnik,Europe,Croatia,12,IslandHopper,sea,78,5,mild,63a0672da255fe4765df5059
+lazy,Edinburgh,Europe,Scotland,13,CastleTown,city,53,3,mild,63a0672da255fe4765df505a
+lazy,Rome,Europe,Italy,14,WineValley,city,25,5,mild,63a0672da255fe4765df505b
+active,Paro Valley,Asia,Bhutan,15,WearyTraveller,mountain,54,5,mild,63a0672da255fe4765df505c
+lazy,Jaipur,Asia,India,16,HotTimes,sea,67,4,hot,63a0672da255fe4765df505d
+active,Waikato,Australia,New Zealand,17,ForestRetreat,mountain,89,4,mild,63a0672da255fe4765df505e
+lazy,Havana,North America,Cuba,18,Casablanca,city,29,5,mild,63a0672da255fe4765df505f
+active,Tokyo,Asia,Japan,19,TechCity,city,,3,mild,63a0672da255fe4765df5060
+active,Base Marambio,Antarctica,Antartica,20,IceHotel,mountain,,5,cold,63a0672da255fe4765df5061
+active,,Arctic,Greenland,21,NorthStar,mountain,,5,cold,63a0672da255fe4765df5062
