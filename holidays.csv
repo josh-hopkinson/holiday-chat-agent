@@ -1,24 +1,22 @@
-Category,City,Continent,Country,HolidayReference,HotelName,Location,PricePerNight,StarRating,TempRating,_id
-active,Base Marambio,Antarctica,Antartica,20,IceHotel,mountain,270,5,cold,63a066b7a255fe4765df504c
-active,,Arctic,Greenland,21,NorthStar,mountain,250,5,cold,63a066b7a255fe4765df504d
-active,Bali,Asia,Indonesia,1,Uptown,mountain,120,3,mild,63a0672da255fe4765df504e
-lazy,New Orleans,North America,USA,2,Relaxamax,city,28,4,mild,63a0672da255fe4765df504f
-active,Ventry,Europe,Ireland,3,WindyBeach,sea,42,3,mild,63a0672da255fe4765df5050
-lazy,Marrakech,Africa,Morocco,4,Twighlight,mountain,50,5,cold,63a0672da255fe4765df5051
-lazy,Sydney,Australia,Australia,5,TooHot,sea,67,5,hot,63a0672da255fe4765df5052
-lazy,,Africa,The Maldives,6,Castaway,sea,120,3,mild,63a0672da255fe4765df5053
-active,Paris,Europe,France,7,Eiffel Park,city,45,4,mild,63a0672da255fe4765df5054
-active,Cape Town,Africa,South Africa,8,The Cape,sea,78,4,mild,63a0672da255fe4765df5055
-active,Dubai,Asia,U.A.E,9,Desert Dreams,mountain,67,4,hot,63a0672da255fe4765df5056
-active,Bora Bora,Australia,French Polynesia,10,SeaViews,sea,54,3,mild,63a0672da255fe4765df5057
-active,New York,North America,USA,11,AppleCity,city,27,3,mild,63a0672da255fe4765df5058
-active,Dubrovnik,Europe,Croatia,12,IslandHopper,sea,78,5,mild,63a0672da255fe4765df5059
-lazy,Edinburgh,Europe,Scotland,13,CastleTown,city,53,3,mild,63a0672da255fe4765df505a
-lazy,Rome,Europe,Italy,14,WineValley,city,25,5,mild,63a0672da255fe4765df505b
-active,Paro Valley,Asia,Bhutan,15,WearyTraveller,mountain,54,5,mild,63a0672da255fe4765df505c
-lazy,Jaipur,Asia,India,16,HotTimes,sea,67,4,hot,63a0672da255fe4765df505d
-active,Waikato,Australia,New Zealand,17,ForestRetreat,mountain,89,4,mild,63a0672da255fe4765df505e
-lazy,Havana,North America,Cuba,18,Casablanca,city,29,5,mild,63a0672da255fe4765df505f
-active,Tokyo,Asia,Japan,19,TechCity,city,,3,mild,63a0672da255fe4765df5060
-active,Base Marambio,Antarctica,Antartica,20,IceHotel,mountain,,5,cold,63a0672da255fe4765df5061
-active,,Arctic,Greenland,21,NorthStar,mountain,,5,cold,63a0672da255fe4765df5062
+Category,City,Continent,Country,HolidayReference,HotelName,Image,Location,PricePerNight,StarRating,TempRating
+active,Bali,Asia,Indonesia,1,Uptown,https://imageio.forbes.com/specials-images/imageserve/675172642/pura-ulun-danu-bratan-temple-in-Bali-/960x0.jpg,mountain,120,3,mild
+lazy,New Orleans,North America,USA,2,Relaxamax,https://upload.wikimedia.org/wikipedia/commons/0/0e/ChrisLitherlandBourbonSt.jpg,city,28,4,mild
+active,Ventry,Europe,Ireland,3,WindyBeach,https://kingdomofkerry.com/wp-content/uploads/2021/07/People-swimming-at-Ventry-Beach.jpg,sea,42,3,mild
+lazy,Marrakech,Africa,Morocco,4,Twighlight,https://media.gq-magazine.co.uk/photos/5d138f50976fa31476f39436/master/pass/marrakech-gq-9oct18_istock_b.jpg,mountain,50,5,cold
+lazy,Sydney,Australia,Australia,5,TooHot,https://media.timeout.com/images/103161245/image.jpg,sea,67,5,hot
+lazy,,Africa,The Maldives,6,Castaway,https://image.cnbcfm.com/api/v1/image/106616793-1594805802117gettyimages-900809876.jpg,sea,120,3,mild
+active,Paris,Europe,France,7,Eiffel Park,https://www.telegraph.co.uk/content/dam/Travel/hotels/europe/france/paris/paris-cityscape-overview-guide.jpg,city,45,4,mild
+active,Cape Town,Africa,South Africa,8,The Cape,https://www.andbeyond.com/wp-content/uploads/sites/5/cape-town-aerial-view-greenpoint-stadium.jpg,sea,78,4,mild
+active,Dubai,Asia,U.A.E,9,Desert Dreams,https://cdn.cnn.com/cnnnext/dam/assets/200924183413-dubai-9-1-super-169.jpg,mountain,67,4,hot
+active,Bora Bora,Australia,French Polynesia,10,SeaViews,https://cdn.britannica.com/57/99557-050-213502D2/Hut-dwellings-Bora-Bora-Society-Islands-French-Polynesia.jpg,sea,54,3,mild
+active,New York,North America,USA,11,AppleCity,https://worldstrides.com/wp-content/uploads/2015/07/iStock_000040849990_Large.jpg,city,27,3,mild
+active,Dubrovnik,Europe,Croatia,12,IslandHopper,https://assets.vogue.com/photos/597642e77563be3e6b400a90/master/w_2560%2Cc_limit/00-lede-dubrovnik-croatia-travel-guide.jpg,sea,78,5,mild
+lazy,Edinburgh,Europe,Scotland,13,CastleTown,https://a.cdn-hotels.com/gdcs/production73/d1723/35b8f7e3-14c4-4d53-ae2f-5f7f6adb6aac.jpg,city,53,3,mild
+lazy,Rome,Europe,Italy,14,WineValley,https://media.timeout.com/images/105211701/image.jpg,city,25,5,mild
+active,Paro Valley,Asia,Bhutan,15,WearyTraveller,https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/cover-image-of-Things-To-Do-In-Paro_19th-mar.jpg,mountain,54,5,mild
+lazy,Jaipur,Asia,India,16,HotTimes,https://www.jaipurstuff.com/wp-content/uploads/2022/08/First-Time-Visitors-Guide-to-Jaipur.jpg,sea,67,4,hot
+active,Waikato,Australia,New Zealand,17,ForestRetreat,https://peakvisor.com/photo/Waikato-New-Zealand.jpg,mountain,89,4,mild
+lazy,Havana,North America,Cuba,18,Casablanca,https://images.visitarcuba.org/La-Habana.jpg,city,29,5,mild
+active,Tokyo,Asia,Japan,19,TechCity,https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg,city,71,3,mild
+active,Base Marambio,Antarctica,Antartica,20,IceHotel,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Base_Marambio_y_el_Hercules.jpg/220px-Base_Marambio_y_el_Hercules.jpg,mountain,270,5,cold
+active,,Arctic,Greenland,21,NorthStar,https://i.natgeofe.com/k/f0038f41-8065-4a7d-871f-79bdb83aa9e8/greenland-nuuk.jpg,mountain,250,5,cold

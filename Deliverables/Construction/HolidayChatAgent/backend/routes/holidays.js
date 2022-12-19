@@ -7,9 +7,10 @@ const router = express.Router();
 //Importing Message Controller
 const holidayController = require("../controllers/holidayController");
 
-// router.post("/holidays", holidayController.create);
+//Declare routes and assign them to methods from controller
 router.get("/holidays", holidayController.all)
 
 router.patch("/holidays/:id", holidayController.update)
 
+//export router
 module.exports = router;

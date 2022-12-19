@@ -101,6 +101,10 @@ export default {
       this.userMessages = user.data.data
       this.agentMessages = agent.data.data
 
+      //scroll to bottom if message recieved
+      let elem = document.getElementById('border-wrapper')
+      elem.scrollTop = elem.scrollHeight
+
       //repeat process after 1ms to catch anything that may have been missed first time
       setTimeout(async() => {
         let user = await axios.get(
@@ -127,6 +131,13 @@ export default {
       //Check that Running Count = 1
       if (localStorage.getItem('RunningCount') == 1) {
 
+      //Check for user input
+      if (this.input === undefined || this.input === '') {
+
+      //if no input do nothing
+      return null;
+      } else {
+
       //Formatting user response to a way that axios prefers, 
       const formData = new URLSearchParams()
       formData.append("content", this.input)
@@ -135,7 +146,7 @@ export default {
       try {
 
         //post the request with the formatteded data included
-        await axios.post(
+        let response = await axios.post(
         'http://localhost:3000/messages/1',
         formData,
         {
@@ -144,14 +155,29 @@ export default {
         
         //Reset the input field to be blank
         this.input = undefined
-        //Updates the running count to 2
-        localStorage.setItem('RunningCount', 2)
+
+        //Updates the running count to 2 if correct response recieved
+        if (response.data.status === 200){
+          localStorage.setItem('RunningCount', 2)
+
+          //scroll to bottom if message recieved
+          let elem = document.getElementById('border-wrapper')
+          elem.scrollTop = elem.scrollHeight
+
+        } else {
+
+          localStorage.setItem('RunningCount', 1)
+
+          //scroll to bottom if message recieved
+          let elem = document.getElementById('border-wrapper')
+          elem.scrollTop = elem.scrollHeight
+        }
 
       } catch (error) {
         //Log any errors to console
         console.log(error)
       }
-
+    }
     }
     },
 
@@ -161,6 +187,13 @@ export default {
       //Check that the running count = 2
       if (localStorage.getItem('RunningCount') == 2) {
 
+      //Check for user input
+      if (this.input === undefined || this.input === '') {
+
+      //if no input do nothing
+      return null;
+      } else {
+
         //Formatting user response to a way that axios prefers
         const formData = new URLSearchParams()
         formData.append("content", this.input)
@@ -169,7 +202,7 @@ export default {
         try {
 
           //post the request with the formatteded data included
-            await axios.post(
+            let response = await axios.post(
             'http://localhost:3000/messages/2',
             formData,
             {
@@ -179,18 +212,31 @@ export default {
             //Reset the input field to be blank
             this.input = undefined
             //Updates the running count to 2
-            localStorage.setItem('RunningCount', 3)
 
-            //scroll to bottom if message recieved
-            let elem = document.getElementById('border-wrapper')
-            elem.scrollTop = elem.scrollHeight
-  
+            //Updates the running count to 2 if correct response recieved
+            if (response.data.status === 200){
+              localStorage.setItem('RunningCount', 3)
+
+              //scroll to bottom if message recieved
+              let elem = document.getElementById('border-wrapper')
+              elem.scrollTop = elem.scrollHeight
+
+            } else {
+
+              localStorage.setItem('RunningCount', 2)
+
+              //scroll to bottom if message recieved
+              let elem = document.getElementById('border-wrapper')
+              elem.scrollTop = elem.scrollHeight
+            }
+
         } catch (error) {
           //Log any errors to console
           console.log(error)
         }
       
       }
+    }
     },
 
     //Function to handle the second question
@@ -198,6 +244,13 @@ export default {
 
     //Check that the running count = 3
     if (localStorage.getItem('RunningCount') == 3) {
+
+    //Check for user input
+      if (this.input === undefined || this.input === '') {
+
+      //if no input do nothing
+      return null;
+      } else {
 
         //Formatting user response to a way that axios prefers
         const formData = new URLSearchParams();
@@ -207,7 +260,7 @@ export default {
         try {
 
             //post the request with the formatteded data included
-            await axios.post(
+            let response = await axios.post(
             'http://localhost:3000/messages/3',
             formData,
             {
@@ -216,27 +269,37 @@ export default {
 
             //Reset the input field to be blank
             this.input = undefined
-            //Updates the running count to 4
-            localStorage.setItem('RunningCount', 4)
 
-            //scroll to bottom if message recieved
-            let elem = document.getElementById('border-wrapper')
-            elem.scrollTop = elem.scrollHeight
+            //Updates the running count to 2 if correct response recieved
+            if (response.data.status === 200){
+              localStorage.setItem('RunningCount', 4)
 
-            //Hides send button
-            document.getElementById("sendBtn").style.display = "none"
-            //Shows start over button
-            document.getElementById("resetBtn").style.display = "block"
-            //Disable text input
-            document.getElementById("text-input").disabled = true
-            //Set cursor effect for disabled text field
-            document.getElementById("text-input").style.cursor = "not-allowed"
+              //Hides send button
+              document.getElementById("sendBtn").style.display = "none"
+              //Shows start over button
+              document.getElementById("resetBtn").style.display = "block"
+              //Disable text input
+              document.getElementById("text-input").disabled = true
+              //Set cursor effect for disabled text field
+              document.getElementById("text-input").style.cursor = "not-allowed"
 
-            
+              //scroll to bottom if message recieved
+              let elem = document.getElementById('border-wrapper')
+              elem.scrollTop = elem.scrollHeight
+            } else {
+
+              localStorage.setItem('RunningCount', 3)
+
+              //scroll to bottom if message recieved
+              let elem = document.getElementById('border-wrapper')
+              elem.scrollTop = elem.scrollHeight
+            }
+
         } catch (error) {
           console.log(error)
         }
 
+    }
     }
     },
 
