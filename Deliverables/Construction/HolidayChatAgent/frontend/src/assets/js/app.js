@@ -180,6 +180,10 @@ export default {
             this.input = undefined
             //Updates the running count to 2
             localStorage.setItem('RunningCount', 3)
+
+            //scroll to bottom if message recieved
+            let elem = document.getElementById('border-wrapper')
+            elem.scrollTop = elem.scrollHeight
   
         } catch (error) {
           //Log any errors to console
@@ -214,6 +218,10 @@ export default {
             this.input = undefined
             //Updates the running count to 4
             localStorage.setItem('RunningCount', 4)
+
+            //scroll to bottom if message recieved
+            let elem = document.getElementById('border-wrapper')
+            elem.scrollTop = elem.scrollHeight
 
             //Hides send button
             document.getElementById("sendBtn").style.display = "none"

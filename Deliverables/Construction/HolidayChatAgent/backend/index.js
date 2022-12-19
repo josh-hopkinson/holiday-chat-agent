@@ -35,6 +35,7 @@ mongoose
 const app = express();
 const PORT = 3000;
 
+//Echo message to console to indicate server is up
 app.listen(PORT, () => {
     console.log("Server is listening on port:", PORT);
 });
@@ -46,7 +47,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
 //Tell server to use routes
-
 app.use(messagesRoutes);
 app.use(holidayRoutes);
 app.use(agentMessagesRoutes);
