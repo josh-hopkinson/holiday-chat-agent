@@ -11,7 +11,7 @@ export default {
     return {
       input: '',
       agentMessages: [],
-      userMessages: []
+      userMessages: [],
     }
   },
 
@@ -61,6 +61,7 @@ export default {
       //assign Vue object to get request data from those variables
       this.userMessages = user.data.data
       this.agentMessages = agent.data.data
+
 
       //repeat process after 1ms to catch anything that may have been missed first time
       setTimeout(async() => {
@@ -173,6 +174,10 @@ export default {
           elem.scrollTop = elem.scrollHeight
         }
 
+        //scroll to bottom if message recieved
+        let elem = document.getElementById('border-wrapper')
+        elem.scrollTop = elem.scrollHeight
+
       } catch (error) {
         //Log any errors to console
         console.log(error)
@@ -226,8 +231,10 @@ export default {
               localStorage.setItem('RunningCount', 2)
 
               //scroll to bottom if message recieved
-              let elem = document.getElementById('border-wrapper')
-              elem.scrollTop = elem.scrollHeight
+              setTimeout(async() => {
+                this.updateChat()
+              }, 100)
+              
             }
 
         } catch (error) {
@@ -294,6 +301,10 @@ export default {
               let elem = document.getElementById('border-wrapper')
               elem.scrollTop = elem.scrollHeight
             }
+
+          //scroll to bottom if message recieved
+          let elem = document.getElementById('border-wrapper')
+          elem.scrollTop = elem.scrollHeight
 
         } catch (error) {
           console.log(error)
